@@ -1,11 +1,34 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
 
+/* variables */
 :root {
   --brand-yellow: #efe60b;
   --brand-blue: #1cd4e9;
   --dark-gray: #171515;
 }
 
+/* reset */
+
+/* base styles */
 body {
   font-family: "Montserrat", sans-serif;
+}
+
+/* fonts */
+
+/* mobile styles */
+
+/* small tablet styles */
+@media screen and (min-width: 620px) {
+
+}
+
+/* large tablets & laptop styles */
+@media screen and (min-width: 960px) {
+
+}
+
+/* desktop styles */
+@media screen and (min-width: 1200px) {
+
 }
