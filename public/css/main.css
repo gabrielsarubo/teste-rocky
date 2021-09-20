@@ -130,6 +130,30 @@ h3 {
   margin: 5vh 0 15vh 0;
 }
 
+/* Section About */
+#about {
+  margin: 3em 1.5em;
+}
+
+#about h2 {
+  margin-bottom: 1em;
+}
+
+#about .about-content {
+  padding: 1.5em;
+
+  box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.2);
+}
+
+#about .about-content > p {
+  font-size: 0.9em;
+}
+
+/* Select all but the last p tag */
+#about .about-content > p:not(:last-child) {
+  margin-bottom: 1.5em;
+}
+
 /* ! small tablet styles */
 @media screen and (min-width: 620px) {
 
