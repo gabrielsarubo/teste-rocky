@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 
 /* variables */
 :root {
@@ -27,10 +27,10 @@ body {
 /* Call to Action buttons */
 .cta-primary {
   display: inline-block;
-  padding: 1rem 2rem;
+  padding: 1em 2em;
   border-radius: 50px;
   
-  font-size: 0.9rem;
+  font-size: 0.9em;
   font-weight: 600;
   text-transform: uppercase;
   color: white;
@@ -43,12 +43,29 @@ body {
 
 /* inputs and textareas */
 input, textarea {
-  padding: 0.6rem;
+  padding: 0.6em;
 
   font-family: inherit;
 }
 
 /* fonts */
+h1, h2, h3, h4 {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2em;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 1.6em;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 1.2em;
+}
 
 /* mobile styles */
 
@@ -60,9 +77,17 @@ input, textarea {
 /* large tablets & laptop styles */
 @media screen and (min-width: 960px) {
 
+  body {
+    font-size: 18px;
+  }
+  
 }
 
 /* desktop styles */
 @media screen and (min-width: 1200px) {
 
+  body {
+    font-size: 20px;
+  }
+  
 }
