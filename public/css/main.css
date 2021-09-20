@@ -8,10 +8,44 @@
 }
 
 /* reset */
+body, p, a, ul, li {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
 
 /* base styles */
 body {
   font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+}
+
+/* Call to Action buttons */
+.cta-primary {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: white;
+  background-color: var(--brand-blue);
+}
+
+.cta-primary:hover {
+  filter: brightness(0.95);
+}
+
+/* inputs and textareas */
+input, textarea {
+  padding: 0.6rem;
+
+  font-family: inherit;
 }
 
 /* fonts */
