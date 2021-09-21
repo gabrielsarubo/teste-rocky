@@ -56,21 +56,21 @@ input, textarea {
 h1, h2, h3, h4 {
   font-weight: 700;
   margin: 0;
+  line-height: 1.5;
 }
 
 h1 {
   font-size: 2em;
   text-transform: uppercase;
-  line-height: 1.5;
 }
 
 h2 {
-  font-size: 1.6em;
+  font-size: 1.8em;
   text-transform: uppercase;
 }
 
 h3 {
-  font-size: 1.2em;
+  font-size: 1.4em;
 }
 
 .leading {
@@ -87,6 +87,60 @@ h3 {
 .grid {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
+}
+
+/* Creates a uniform margin for every main section */
+.container {
+  margin: 4em 1.5em;
+}
+
+/* Select all h2 in every main section */
+.container > h2 {
+  margin-bottom: 1em;
+}
+
+/* General styles for cards */
+.card {
+  padding: 2em 1.2em;
+  margin-top: 2em;
+  
+  color: white;
+  text-align: center;
+  background-color: black;
+  border-radius: 30px;
+  box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.2);
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.card .card-icon {
+  margin-bottom: 2em;
+}
+
+.card > h3 {
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+
+  color: var(--brand-yellow);
+}
+
+.card p {
+  line-height: 1.6;
+}
+
+.card p:not(:last-child) {
+  margin-bottom: 1.5em;
+}
+
+/* Styles for cards in the section Diferenciais */
+.card.card-diferenciais {
+  padding: 3em 2em;
+  
+  font-weight: 500;
+  font-size: 0.9em;
+  border-radius: 50px;
 }
 
 /* Navbar .site-nav */
@@ -131,14 +185,6 @@ h3 {
 }
 
 /* Section About */
-#about {
-  margin: 3em 1.5em;
-}
-
-#about h2 {
-  margin-bottom: 1em;
-}
-
 #about .about-content {
   padding: 1.5em;
 
@@ -153,6 +199,16 @@ h3 {
 #about .about-content > p:not(:last-child) {
   margin-bottom: 1.5em;
 }
+
+/* Section Services */
+.card.servicos { background-image: url(../assets/mobile/s3_ft1.png); }
+.card.midia { background-image: url(../assets/mobile/s3_ft2.png); }
+.card.implementacoes { background-image: url(../assets/mobile/s3_ft3.png); }
+
+/* Section Diferenciais */
+.card.diferencial-1 { background-image: url(../assets/mobile/s4_ft1.png); }
+.card.diferencial-2 { background-image: url(../assets/mobile/s4_ft2.png); }
+.card.diferencial-3 { background-image: url(../assets/mobile/s4_ft3.png); }
 
 /* ! small tablet styles */
 @media screen and (min-width: 620px) {
