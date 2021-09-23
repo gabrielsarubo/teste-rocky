@@ -47,10 +47,17 @@ p {
 
 /* inputs and textareas */
 input, textarea {
-  padding: 0.6em;
+  padding: 0.7em;
 
+  font-size: 1em;
   font-family: inherit;
 }
+
+input::placeholder, textarea::placeholder {
+  opacity: 0.7;
+}
+
+button { font-family: inherit; }
 
 /* fonts */
 h1, h2, h3, h4 {
@@ -79,8 +86,7 @@ h3 {
 }
 
 .leading > span {
-  color: var(--brand-yellow
-  );
+  color: var(--brand-yellow);
 }
 
 /* ! mobile styles */
@@ -101,9 +107,10 @@ h3 {
 
 /* General styles for cards */
 .card {
-  padding: 2em 1.2em;
+  padding: 2em 1.3em;
   margin-top: 2em;
   
+  font-size: 0.9em;
   color: white;
   text-align: center;
   background-color: black;
@@ -139,7 +146,6 @@ h3 {
   padding: 3em 2em;
   
   font-weight: 500;
-  font-size: 0.9em;
   border-radius: 50px;
 }
 
@@ -202,13 +208,149 @@ h3 {
 
 /* Section Services */
 .card.servicos { background-image: url(../assets/mobile/s3_ft1.png); }
+
 .card.midia { background-image: url(../assets/mobile/s3_ft2.png); }
+
 .card.implementacoes { background-image: url(../assets/mobile/s3_ft3.png); }
 
 /* Section Diferenciais */
 .card.diferencial-1 { background-image: url(../assets/mobile/s4_ft1.png); }
+
 .card.diferencial-2 { background-image: url(../assets/mobile/s4_ft2.png); }
+
 .card.diferencial-3 { background-image: url(../assets/mobile/s4_ft3.png); }
+
+/* Footer */
+footer {
+  color: white;
+  background-color: var(--dark-gray);
+  border-top: 1.5em solid var(--brand-yellow);
+  border-bottom: 1.5em solid var(--brand-yellow);
+}
+
+footer p.highlight-1 { color: var(--brand-yellow); }
+
+footer p.highlight-2 { color: var(--brand-blue); }
+
+/* Contect section inside the footer */
+.footer-content {
+  padding: 2em 1.5em;
+  line-height: 1.5;
+  font-size: 0.8em;
+}
+
+.footer-content .logo-social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2em;
+}
+
+.footer-content .contact-info {
+  display: flex;
+  margin-bottom: 1em;
+  flex-wrap: wrap;
+  
+  color: #c4c4c4;
+}
+
+.footer-content .contact-info > * {
+  margin-bottom: 1em;
+}
+
+.footer-content .contact-info > div {
+  display: flex;
+  align-items: center;
+}
+
+.footer-content .contact-info > div > svg {
+  margin-right: 8px;
+}
+
+.footer-content .contact-info > div > a {
+  color: inherit;
+}
+
+/* TODO Icons */
+.social-networks > * {
+  margin-left: 2em;
+}
+
+.icon-social {
+  width: 28px;
+  height: 28px;
+}
+
+.icon-social path {
+  fill: white;
+}
+
+.icon-footer {
+  max-width: 1.2em;
+  height: 1.2em;
+}
+
+.icon-footer path {
+  fill: var(--brand-yellow);
+}
+
+.footer-content .contact-info .info-email::after {
+  margin: 0 2em;
+  content: "|";
+}
+
+.footer-content .footer-text {
+  font-weight: 600;
+  text-align: center;
+}
+
+.footer-content .footer-text p:not(:last-child) {
+  margin-bottom: 1em;
+}
+
+/* Contact form inside the footer */
+.contact-form {
+  padding: 1.5em;
+  background-color: #818181;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form form > input, .contact-form form > textarea {
+  margin-bottom: 1em;
+}
+
+.contact-form form .button[type="submit"] {
+  border: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  font-size: 1.2em;
+  padding: 0.8em;
+  background-color: var(--brand-blue);
+
+  transition: 
+    background 250ms ease-in-out, 
+    transform 150ms ease;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #19bcce !important;
+}
+
+.button:focus {
+  outline: 1px solid #fff;
+  outline-offset: -4px;
+}
+
+.button:active {
+  transform: scale(0.99);
+}
 
 /* ! small tablet styles */
 @media screen and (min-width: 620px) {

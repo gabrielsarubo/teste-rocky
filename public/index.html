@@ -67,6 +67,7 @@
   <section id="diferenciais" class="container">
     <h2>Diferenciais</h2>
     <div class="card card-diferenciais diferencial-1">
+      <!-- TODO change img to background-image -->
       <img src="./assets/fa-solid_medal.png" class="card-icon" alt="Icone de medalha">
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias provident a cum reiciendis accusamus. Assumenda excepturi tempora corrupti voluptatibus error iste vero, cupiditate</p>
     </div>
@@ -82,21 +83,49 @@
 
   <!-- Footer -->
   <footer>
-    <div>
-      <img src="./assets/mobile/logo.png" alt="Logo da Rocky">
-      <span>Facebook</span>
-      <span>LinkedIn</span>
-
-      <div>
-        <div>📧 contato@rocky.ag</div>
-        <div>📞 (15) 3321-1105</div>
-        <div>📍 R.Romeu do Nascimento, 247 - Jardim Portal da Colina, Sorocaba - SP, 18047-410 - 2o andar</div>
+    <div class="footer-content">
+      <div class="logo-social">
+        <img src="./assets/mobile/logo.png" alt="Logo da Rocky">
+        <div class="social-networks">
+          <a href="http://www.facebook.com/">
+            <svg class="icon-social" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M0 16.0893C0 24.044 5.77733 30.6587 13.3333 32V20.444H9.33333V16H13.3333V12.444C13.3333 8.444 15.9107 6.22267 19.556 6.22267C20.7107 6.22267 21.956 6.4 23.1107 6.57733V10.6667H21.0667C19.1107 10.6667 18.6667 11.644 18.6667 12.8893V16H22.9333L22.2227 20.444H18.6667V32C26.2227 30.6587 32 24.0453 32 16.0893C32 7.24 24.8 0 16 0C7.2 0 0 7.24 0 16.0893Z" fill="black"/>
+            </svg>
+          </a>
+          
+          <a href="http://www.linkedin.com/">
+            <svg class="icon-social" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 2.292C0 1.026 1.052 0 2.35 0H29.65C30.948 0 32 1.026 32 2.292V29.708C32 30.974 30.948 32 29.65 32H2.35C1.052 32 0 30.974 0 29.708V2.292ZM9.886 26.788V12.338H5.084V26.788H9.886ZM7.486 10.364C9.16 10.364 10.202 9.256 10.202 7.868C10.172 6.45 9.162 5.372 7.518 5.372C5.874 5.372 4.8 6.452 4.8 7.868C4.8 9.256 5.842 10.364 7.454 10.364H7.486V10.364ZM17.302 26.788V18.718C17.302 18.286 17.334 17.854 17.462 17.546C17.808 16.684 18.598 15.79 19.926 15.79C21.664 15.79 22.358 17.114 22.358 19.058V26.788H27.16V18.5C27.16 14.06 24.792 11.996 21.632 11.996C19.084 11.996 17.942 13.396 17.302 14.382V14.432H17.27C17.2806 14.4153 17.2913 14.3986 17.302 14.382V12.338H12.502C12.562 13.694 12.502 26.788 12.502 26.788H17.302Z" fill="black"/>
+            </svg> 
+          </a>             
+        </div>
       </div>
 
-      <div>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, optio consequuntur officia unde omnis rem architecto? Suscipit eius voluptates, ad odit, officiis fugit quae quibusdam omnis adipisci repudiandae nostrum laborum.</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, optio consequuntur officia unde omnis rem architecto? Suscipit eius voluptates, ad odit, officiis fugit quae quibusdam omnis adipisci repudiandae nostrum laborum.</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, optio consequuntur officia unde omnis rem architecto? Suscipit eius voluptates, ad odit, officiis fugit quae quibusdam omnis adipisci repudiandae nostrum laborum.</p>
+      <div class="contact-info">
+        <div class="info-email">
+          <svg class="icon-footer" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M31.3937 11.925C31.6375 11.7313 32 11.9125 32 12.2188V25C32 26.6562 30.6562 28 29 28H3C1.34375 28 0 26.6562 0 25V12.225C0 11.9125 0.35625 11.7375 0.60625 11.9312C2.00625 13.0187 3.8625 14.4 10.2375 19.0312C11.5563 19.9937 13.7812 22.0188 16 22.0063C18.2313 22.025 20.5 19.9563 21.7687 19.0312C28.1437 14.4 29.9937 13.0125 31.3937 11.925ZM16 20C17.45 20.025 19.5375 18.175 20.5875 17.4125C28.8812 11.3938 29.5125 10.8687 31.425 9.36875C31.7875 9.0875 32 8.65 32 8.1875V7C32 5.34375 30.6562 4 29 4H3C1.34375 4 0 5.34375 0 7V8.1875C0 8.65 0.2125 9.08125 0.575 9.36875C2.4875 10.8625 3.11875 11.3938 11.4125 17.4125C12.4625 18.175 14.55 20.025 16 20Z" fill="black"/>
+          </svg>            
+          <a href="mailto:contato@rocky.ag">contato@rocky.ag</a>
+        </div>
+        <div class="info-phone">
+          <svg class="icon-footer" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M31.0869 22.6125L24.0869 19.6125C23.7878 19.4851 23.4555 19.4582 23.1399 19.536C22.8243 19.6138 22.5425 19.792 22.3369 20.0438L19.2369 23.8313C14.3717 21.5374 10.4564 17.6221 8.1625 12.7569L11.95 9.65692C12.2023 9.45172 12.3809 9.1699 12.4587 8.85414C12.5365 8.53837 12.5093 8.20585 12.3813 7.90692L9.38125 0.906919C9.2407 0.584674 8.99211 0.321572 8.67834 0.16298C8.36458 0.00438857 8.00532 -0.0397524 7.6625 0.0381686L1.1625 1.53817C0.831981 1.61449 0.537091 1.80059 0.325959 2.0661C0.114828 2.3316 -7.61381e-05 2.66083 3.78513e-08 3.00004C3.78513e-08 19.0313 12.9937 32 29 32C29.3393 32.0003 29.6687 31.8854 29.9343 31.6743C30.2 31.4631 30.3862 31.1682 30.4625 30.8375L31.9625 24.3375C32.0399 23.9931 31.9948 23.6324 31.835 23.3175C31.6752 23.0027 31.4107 22.7534 31.0869 22.6125V22.6125Z" fill="black"/>
+          </svg>            
+          <a href="tel:+1533211105">(15) 3321-1105</a>
+        </div>
+        <div class="info-address">
+          <svg class="icon-footer" width="24" height="32" viewBox="0 0 24 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10.7668 31.3544C1.68563 18.1894 0 16.8383 0 12C0 5.37256 5.37256 0 12 0C18.6274 0 24 5.37256 24 12C24 16.8383 22.3144 18.1894 13.2332 31.3544C12.6373 32.2153 11.3626 32.2152 10.7668 31.3544ZM12 17C14.7614 17 17 14.7614 17 12C17 9.23856 14.7614 7 12 7C9.23856 7 7 9.23856 7 12C7 14.7614 9.23856 17 12 17Z" fill="black"/>
+          </svg>            
+          <a href="#">R. Romeu do Nascimento, 247 - Jardim Portal da Colina, Sorocaba - SP, 18047-410 - 2o andar</a>
+        </div>
+      </div>
+
+      <div class="footer-text">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, optio consequuntur officia unde omnis rem architecto? Suscipit.</p>
+        <p class="highlight-1">Lorem, ipsum dolor sit amet consectetur  consequuntur officia unde omnis rem architecto? Suscipit.</p>
+        <p class="highlight-2">Consectetur adipisicing elit officia unde omnis rem architecto? Suscipit.</p>
       </div>
     </div>
 
@@ -105,7 +134,7 @@
         <input type="text" placeholder="Nome">
         <input type="email" name="email" id="email" placeholder="E-mail">
         <input type="number" name="investimento" id="investimento" placeholder="Investimento mensal">
-        <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Mensagem"></textarea>
+        <textarea name="msg" id="msg" cols="30" rows="6" placeholder="Mensagem"></textarea>
         <button type="submit" class="button">Enviar Mensagem</button>
       </form>
     </div>
