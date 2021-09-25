@@ -108,6 +108,11 @@ h3 {
 }
 
 /* General styles for cards */
+.container-cards {
+  display: flex;
+  flex-direction: column;
+}
+
 .card {
   padding: 2em 1.3em;
   margin-top: 2em;
@@ -208,7 +213,7 @@ h3 {
 }
 
 #about .about-content > p {
-  font-size: 0.7em;
+  font-size: 0.8em;
 }
 
 /* Select all but the last p tag */
@@ -224,6 +229,10 @@ h3 {
 .card.implementacoes { background-image: url(../assets/mobile/s3_ft3.png); }
 
 /* Section Diferenciais */
+section#diferenciais {
+  padding-bottom: 8em;
+}
+
 .card.diferencial-1 { background-image: url(../assets/mobile/s4_ft1.png); }
 
 .card.diferencial-2 { background-image: url(../assets/mobile/s4_ft2.png); }
@@ -236,6 +245,14 @@ footer {
   background-color: var(--dark-gray);
   border-top: 1.5em solid var(--brand-yellow);
   border-bottom: 1.5em solid var(--brand-yellow);
+}
+
+.container-footer {
+  max-width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 footer p.highlight-1 { color: var(--brand-yellow); }
@@ -320,7 +337,8 @@ footer p.highlight-2 { color: var(--brand-blue); }
 
 /* Contact form inside the footer */
 .contact-form {
-  padding: 1.5em;
+  padding: 1em;
+
   background-color: #818181;
 }
 
@@ -381,14 +399,37 @@ footer p.highlight-2 { color: var(--brand-blue); }
 
   /* Call to Action buttons */
   .cta-primary {
-    font-size: 0.7em;
+    font-size: 0.8em;
   }
 
   body {
-    font-size: 20px;
-    background: url(../assets/web/bg.png) left -100vh no-repeat;
+    font-size: 18px;
+    background: url(../assets/web/bg.png) no-repeat;
+    background-position-y: -10vh;
+    background-size: cover;
   }
 
+  /* Cards and its container */
+  .container-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .card {
+    padding: 2.3em 1.4em;
+    margin-top: 0;
+    width: 280px;
+    
+    font-size: 0.8em;
+  }
+
+  /* Styles for cards in the section Diferenciais */
+  .card.card-diferenciais {
+    width: 180px;
+    padding: 4em 2.5em;
+  }
+  
   /* Navbar .site-nav */
   .site-nav {
     padding: 20px 0;
@@ -441,6 +482,23 @@ footer p.highlight-2 { color: var(--brand-blue); }
   /* Section About */
   #about .about-content {
     width: 75%;
+  }
+
+  /* Footer */
+  .container-footer {
+    flex-direction: row;
+    padding: 2.5em 0;
+  }
+
+  .footer-content {
+    max-width: 350px;
+    padding: 0;
+  }
+
+  .footer-content .footer-text { text-align: left; }
+
+  .contact-form {
+    min-width: 400px;
   }
   
 }
