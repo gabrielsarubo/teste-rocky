@@ -2,12 +2,19 @@
 
 /* variables */
 :root {
+  /* colors */
   --brand-yellow: #efe60b;
   --brand-blue: #1cd4e9;
   --dark-gray: #171515;
+  /* others */
+  --desktop-maxwidth: 1100px;
 }
 
 /* reset */
+* {
+  box-sizing: border-box;
+}
+
 body, p, a, ul, li {
   margin: 0;
   padding: 0;
@@ -90,14 +97,9 @@ h3 {
 }
 
 /* ! mobile styles */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-}
-
 /* Creates a uniform margin for every main section */
 .container {
-  max-width: 1024px;
+  max-width: var(--desktop-maxwidth);
   margin: 0 auto;
   padding: 4em 1.5em;
 }
@@ -158,8 +160,10 @@ h3 {
 
 /* Navbar .site-nav */
 .site-nav {
+  display: flex;
+  justify-content: space-between;
   width: 100%;
-  max-width: 1024px;
+  max-width: var(--desktop-maxwidth);
   position: absolute;
   top: 0;
   left: 50%;
@@ -169,20 +173,82 @@ h3 {
   padding: 10px;
 }
 
-.site-nav .menu {
-  grid-column: 1/2;
-  grid-row: 1;
-}
-
 .site-nav .logo {
-  grid-column: 3/7;
-  grid-row: 1;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   justify-content: center;
 }
 
 .site-nav .menu-expanded {
   display: none;
+}
+
+/* The side navigation menu */
+.sidenav {
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.15);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  overflow-x: hidden;
+  padding-top: 48px;
+  padding-bottom: 16px;
+  transition: 300ms;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.sidenav > div {
+  padding: 0 16px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 14px 0px;
+  display: block;
+  transition: 300ms;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.toplevel:hover .submenu-content {
+  height: initial;
+}
+
+.toplevel:not(:last-child)::after {
+  content: '';
+  display: block;
+  width: 90%;
+  height: 1px;
+  margin: 0 auto;
+  background-color: #a1a1a1;
+}
+
+.sidenav .submenu-content {
+  height: 0;
+  overflow: hidden;
+  font-size: 0.8em;
+  transition: 300ms;
+}
+
+.sidenav .submenu-content a {
+  padding: 8px;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 3em;
+  margin-left: 50px;
+  color: white;
 }
 
 /* Section Banner */
@@ -248,7 +314,7 @@ footer {
 }
 
 .container-footer {
-  max-width: 1024px;
+  max-width: var(--desktop-maxwidth);
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -419,14 +485,14 @@ footer p.highlight-2 { color: var(--brand-blue); }
   .card {
     padding: 2.3em 1.4em;
     margin-top: 0;
-    width: 280px;
+    width: 320px;
     
     font-size: 0.8em;
   }
 
   /* Styles for cards in the section Diferenciais */
   .card.card-diferenciais {
-    width: 180px;
+    width: 250px;
     padding: 4em 2.5em;
   }
   
@@ -439,19 +505,21 @@ footer p.highlight-2 { color: var(--brand-blue); }
     display: none;
   }
 
+  #menu-sidenav {
+    display: none;
+  }
+
   .site-nav .logo {
-    grid-column: 1/3;
-    grid-row: 1;
-    justify-content: start;
+    position: static;
+    left: auto;
+    transform: none;
   }
 
   .site-nav .menu-expanded {
-    grid-column: 3/9;
-    grid-row: 1;
     display: flex;
     justify-content: end;
 
-    font-size: 0.65em;
+    font-size: 0.8em;
   }
   
   .menu-expanded li {
