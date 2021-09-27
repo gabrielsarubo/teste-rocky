@@ -258,7 +258,7 @@ h3 {
 
 /* Section Banner */
 #banner {
-  padding: 0 20px; /* TODO */
+  padding: 0 20px;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -369,7 +369,7 @@ footer p.highlight-2 { color: var(--brand-blue); }
   color: inherit;
 }
 
-/* TODO Icons */
+/* Icons */
 .social-networks > * {
   margin-left: 2em;
 }
