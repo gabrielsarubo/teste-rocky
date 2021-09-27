@@ -532,6 +532,10 @@ footer p.highlight-2 { color: var(--brand-blue); }
     font-weight: 600;
   }
 
+  .menu-expanded li a:hover {
+    color: var(--brand-blue);
+  }
+
   /* Section Banner */
   #banner h1 {
     font-size: 4em;
